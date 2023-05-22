@@ -4,6 +4,7 @@ import {
 	StyleSheet,
 	Text,
 	TextInput,
+	TouchableOpacity,
 	View,
 } from "react-native";
 
@@ -22,6 +23,18 @@ const LoginScreen = () => {
 					style={styles.input}
 					secureTextEntry
 				/>
+			</View>
+
+			<View style={styles.buttonContainer}>
+				<TouchableOpacity onPress={() => {}} style={styles.button}>
+					<Text style={styles.buttonText}>Login</Text>
+				</TouchableOpacity>
+				<TouchableOpacity
+					onPress={() => {}}
+					style={[styles.buttonText, styles.buttonOutline]}
+				>
+					<Text style={styles.buttonOutlineText}>Resgister</Text>
+				</TouchableOpacity>
 			</View>
 		</KeyboardAvoidingView>
 	);
